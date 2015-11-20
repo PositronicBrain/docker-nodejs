@@ -6,4 +6,6 @@ ENV USER root
 
 RUN pacman -S --noconfirm nodejs npm python2 make gcc
 
+RUN npm install --unsafe-perm -g node-inspector
+
 CMD ["node"]
